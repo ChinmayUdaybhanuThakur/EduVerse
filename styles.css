@@ -1,0 +1,202 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-image: linear-gradient(to right, #2c3e50, #3498db);
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+header h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center the navigation */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove the right margin from the last navigation item */
+}
+
+section {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.course-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.course-card h3 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* CSS styles for the course cards */
+
+.most-popular-courses {
+  /* Custom styles for the "Most Popular Courses" section */
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.most-popular-courses h2 {
+  /* Styles for section heading */
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-card {
+  /* Custom styles for the course cards */
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.course-card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.course-card p:last-child {
+  margin-bottom: 0;
+}
+
+.course-card .btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.course-card .btn:hover {
+  background-color: #555;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-circle {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust the right position as desired */
+  transform: translateY(-50%);
+  display: flex; /* Add this line to enable flexbox */
+  align-items: center; /* Add this line to vertically center the circle */
+}
+
+.user-circle .user-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.user-circle .user-menu {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Adjust the right position as desired */
+  transform: translateX(100%); /* Update the transform value to move the menu to the right */
+  background-color: #fff; /* Updated the background color to white */
+  color: #333; /* Updated the text color to dark */
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  white-space: nowrap; /* Prevent menu items from wrapping to the next line */
+}
+
+.user-circle:hover .user-icon {
+  background-color: #f30909;
+}
+
+.user-circle:hover .user-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.user-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu li {
+  margin-bottom: 5px;
+}
+
+.user-menu li:last-child {
+  margin-bottom: 0;
+}

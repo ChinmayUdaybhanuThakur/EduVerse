@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EDUVERSE</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .intro-section {
+      background-color: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .intro-section h2 {
+      font-size: 32px;
+      color: #333;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .intro-section ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .intro-section li {
+      font-size: 16px;
+      color: #777;
+      text-align: left;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .intro-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Updated CSS for the navigation */
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      background-color: #333;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav ul li a:hover {
+      background-color: #555;
+    }
+
+    .user-circle {
+      position: relative;
+      display: inline-block;
+    }
+
+    .user-circle .user-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+
+    .user-circle .user-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .user-circle:hover .user-icon {
+      background-color: #555;
+    }
+
+    .user-circle:hover .user-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .user-menu ul {
+      list-style-type: none;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .user-menu li {
+      margin-bottom: 5px;
+    }
+
+    .user-menu li:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the EDUVERSE!!</h1>
+    <div class="user-circle">
+      <div class="user-icon"></div>
+      <div class="user-menu">
+        <ul>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Personal Info</a></li>
+          <li><a href="#">Site Settings</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="courses.html">Courses</a></li> 
+    <li><a href="progress.html">Progress</a></li> 
+      <li><a href="#intro-section">About</a></li> 
+    </ul>
+    
+  </nav>
+
+  <section class="most-popular-courses">
+    <h2>Most Important Professional Courses in 2023</h2>
+    <div class="course-card">
+      <h3>Full-Stack Developer</h3>
+      <img src="path/to/full_stack_developer.jpg" alt="Full-Stack Developer Illustration">
+      <p>An immersive Full-Stack Developer course will help you build a solid foundation to impress the top-tech professionals and recruiters to land a good job in a product-based company. It is one of the world’s top professional courses. You will be able to gain a thorough understanding of how to deploy, create, secure, and scale programs, as well as become familiar with the user interface, database stacks, and business logic.</p>
+      <p>Number of people who have bought this course: 500</p>
+      <a href="#" class="btn">Start Course</a>
+    </div>
+      <div class="course-card">
+        <h3>Data Science</h3>
+        <img src="path/to/data_science.jpg" alt="Data Science Illustration">
+        <p>One of the best courses to pursue after graduation is a master’s degree in data science. Data Science has deservedly earned the title of the best job of the twenty-first century. There are Data Science courses online that also help you grow in your career tremendously. According to Payscale.com, the average salary for a Data Science graduate is Rs. 622,162...</p>
+        <p>Number of people who have bought this course: 800</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Cloud Computing</h3>
+        <img src="path/to/cloud_computing.jpg" alt="Cloud Computing Illustration">
+        <p>Cloud Computing is a Computer Science arm that deals with the storage, management, and processing of data on internet server networks. It is a global solution for retrieving and storing data. Cloud computing is rapidly becoming an important part of IT-based enterprises...</p>
+        <p>Number of people who have bought this course: 1,200</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Project Management</h3>
+        <img src="path/to/project_management.jpg" alt="Project Management Illustration">
+        <p>PMP (Project Management Professional) is an important certification for Project Management professionals. This program’s focus is to introduce students to a variety of project management techniques and tools, often with hands-on project training...</p>
+        <p>Number of people who have bought this course: 350</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Business Analytics</h3>
+        <img src="path/to/business_analytics.jpg" alt="Business Analytics Illustration">
+        <p>In essence, Business Analytics refers to the process of combining Data Analytics and Business Intelligence on a huge set of data to gain insights for the development of future business plans and strategies. This makes the role of a business analyst really crucial...</p>
+        <p>Number of people who have bought this course: 600</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Chartered Financial Analyst</h3>
+        <img src="path/to/chartered_financial_analyst.jpg" alt="Chartered Financial Analyst Illustration">
+        <p>Chartered Financial Analyst is a very credible course for students who look forward to pursuing a career in Finance rather than STEM. While CA (Chartered Accounting) was the go-to choice for commerce students, CFA has arisen to become a choice globally for students because of its comprehensive curriculum and the lucrative job opportunities it opens up...</p>
+        <p>Number of people who have bought this course: 250</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Digital Marketing</h3>
+        <img src="path/to/digital_marketing.jpg" alt="Digital Marketing Illustration">
+        <p>Due to the rapid online shift, using flyers and billboards as marketing tools have become outdated. Organizations and businesses are looking to use digital mediums to increase and maintain brand awareness. According to recent surveys and research, the digital marketing industry makes a significant contribution to the employment sector...</p>
+        <p>Number of people who have bought this course: 1,500</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Machine Learning</h3>
+        <img src="path/to/machine_learning.jpg" alt="Machine Learning Illustration">
+        <p>Machine learning is a branch of Artificial Intelligence where the system learns from the data, identifies patterns and makes decisions with minimal human intervention. It is a method of data analysis that automates analytical model building...</p>
+        <p>Number of people who have bought this course: 900</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+    
+      <div class="course-card">
+        <h3>Wealth Management</h3>
+        <img src="path/to/wealth_management.jpg" alt="Wealth Management Illustration">
+        <p>Wealth Management is a program that not many people are aware of. However, it can provide you with a plethora of new opportunities in the finance sector. Wealth Management is generally a one-year diploma course that is designed for professionals who want to take their wealth management skills to another level...</p>
+        <p>Number of people who have bought this course: 400</p>
+        <a href="#" class="btn">Start Course</a>
+      </div>
+  </section>
+
+  <section class="intro-section" id="intro-section">
+    <h2>Why Choose EDUVERSE?</h2>
+    <p>EDUVERSE is the ultimate destination for online learning and professional development. We pride ourselves on being the best website for buying courses, offering a wide range of high-quality, industry-relevant courses designed to enhance your skills and propel your career to new heights.</p>
+        <p>With EDUVERSE, you'll experience:</p>
+        <ul>
+          <li>Extensive Course Selection: We curate the most important professional courses in 2023, ensuring that you have access to the latest and most in-demand skills.</li>
+          <li>Expert Instructors: Our courses are taught by industry experts who bring real-world knowledge and practical insights to the learning experience.</li>
+          <li>Flexible Learning Options: Whether you prefer self-paced learning or interactive live sessions, EDUVERSE offers a variety of learning formats to suit your needs.</li>
+          <li>Affordable Pricing: We believe in making education accessible to all, which is why our courses are priced competitively without compromising on quality.</li>
+          <li>Progress Tracking: Track your progress, earn certifications, and showcase your newly acquired skills to potential employers.</li>
+          <li>Exceptional Support: Our dedicated support team is always ready to assist you, ensuring a seamless learning journey.</li>
+        </ul>
+        <p>Choose EDUVERSE today and unlock your full potential!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 EDUVERSE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
